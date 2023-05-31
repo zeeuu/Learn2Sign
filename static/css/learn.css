@@ -1,0 +1,36 @@
+.learn-content {
+    background-color: #FFFBF6;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+.learn-notice {
+    color: #000;
+}
+#learn {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+#subject-notice {
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+.media-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#learnImage {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+.userVideo {
+    display: inline-block;
+}

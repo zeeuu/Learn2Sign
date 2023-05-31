@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<link
+  href="{{ url_for('static', filename='css/learn.css') }}"
+  rel="stylesheet"
+/>
+{% endblock %}
+
+{% block content %}
+<div style="background-color: #7fb77e; padding: 35px">
+  <div class="learn-content">
+    <div class="laern-notice">
+      <div id="learn">학습하기</div>
+      <div id="subject-notice">
+        지문자 중 자음에 해당하는 ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ 를 학습하겠습니다.
+        <br />
+        왼쪽에 제시된 문자와 이미지를 확인한 후 오른쪽 카메라에 동작을 똑같이 따라해봅시다.
+      </div>
+    </div>
+    <div class="media-content">
+      <!-- 학습 이미지 -->
+      <img
+        id="learnImage"
+        src="{{ url_for('static', filename='/image/consonant.jpg') }}"
+        alt="learn sign"
+      />
+      <!-- 사용자 카메라 -->
+      <img
+        id="userVideo"
+        src="/api/consonant/learn"
+        style="width: 400px; height: 300px; margin-left: 120px"
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}

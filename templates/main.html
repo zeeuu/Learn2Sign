@@ -1,0 +1,204 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<link
+  href="{{ url_for('static', filename='css/main.css') }}"
+  rel="stylesheet"
+/>
+{% endblock %}
+
+{%block content %}
+<!-- Start Carousel -->
+<div class="carousel">
+  <div class="carousel-item">
+    <div class="item active">
+      <div class="item-content">
+        <p class="item-title">Sign Language</p>
+        <p class="item-sub">또 다른 보이는 언어 '수어''</p>
+        <p class="item-text">
+          '한국수화언어법'에 따르면 '한국수어'는 '한국수화언어'를 줄인 말로,
+          한국어나 영어와 같은 독립된 언어라는 의미를 담고 있다. 한국수어는
+          한국어와는 문법 체계가 다른, 대한민국 농인의 고유한 언어이다.
+        </p>
+      </div>
+      <img class="item-img" src="../static/image/banner1.jpg" alt="Item 1" />
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <p class="item-title">Sign Language</p>
+        <p class="item-sub">또 다른 보이는 언어 '수어''</p>
+        <p class="item-text">
+          One of the warm AI Projects
+          <strong>Sign language education platform</strong>
+        </p>
+        <p class="item-text">
+          따뜻한 AI 프로젝트 중 하나인
+          <strong>수어 교육 플랫폼</strong>
+        </p>
+      </div>
+      <img class="item-img" src="../static/image/banner2.jpg" alt="Item 2" />
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <p class="item-title">Sign Language</p>
+        <p class="item-sub">또 다른 보이는 언어 '수어''</p>
+        <p class="item-text">
+          수어를 두고 한국어로 말할 때는 몸짓 같은 것이 아닌가 오해할 수 있다.
+          하지만 엄연히 다르다. 수어는 손과 손가락 모양, 손바닥 방향, 손의 위치
+          등에 따라 의미가 달라진다. 또한 같은 동작을 하더라도 어떤 표정을
+          짓느냐에 따라 다른 의미가 된다.
+        </p>
+      </div>
+      <img class="item-img" src="../static/image/banner3.jpg" alt="Item 3" />
+    </div>
+  </div>
+
+  <a class="carousel-control prev" href="#">
+    <i class="fa-solid fa-chevron-left"></i>
+  </a>
+  <a class="carousel-control next" href="#">
+    <i class="fa-solid fa-chevron-right"></i>
+  </a>
+
+  <div class="carousel-indicators">
+    <span class="indicator active"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+  </div>
+</div>
+<!-- End Carousel -->
+
+<!-- Start News -->
+<div class="news-container">
+  <div class="news-title">
+    <div>Sign Language News</div>
+    <p>수어 관련 다양한 소식을 접해보세요.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <a
+        href="http://www.gjdream.com/news/articleView.html?idxno=627748"
+        target="_blank"
+      >
+        <img src="../static/image/card1.jpg" class="card-img" alt="newsImage" />
+      </a>
+      <div class="card-body">
+        <div class="card-title">수어는 내 운명</div>
+        <p class="card-text">
+          김지영 통역사 "청각장애인들이 정보에 접근할 때 수어 통역이 함께 할 수
+          있도록 대책이 필요하다" "문화예술분야나 세미나 등을 가보고 싶어도
+          통역사에 대한 고민부터 하게 되는데, 청각장애인들을 위해 수어통역사를
+          많이 양성하고 수어 사용자를 늘리는 게 중요하다"
+        </p>
+        <p class="card-comment">댓글(24)</p>
+      </div>
+    </div>
+    <div class="card">
+      <a
+        href="https://www.boannews.com/media/view.asp?idx=118136&kind="
+        target="_blank"
+      >
+        <img src="../static/image/card2.jpg" class="card-img" alt="newsImage" />
+      </a>
+      <div class="card-body">
+        <div class="card-title">소방청, 현장교육 소방안전강사 양성</div>
+        <p class="card-text">
+          오는 9월까지 소방안전강사 총 300여명을 대상으로 ‘2023년 소방안전강사
+          전문 교육 과정’을 운영한다고 밝혔다. 특히, 중앙소방학교에서 진행되는
+          ‘장애인 교육역량 강화 과정’은 수어 실습 프로그램 등으로 교육이 진행될
+          예정이다.
+        </p>
+        <p class="card-comment">댓글 (48)</p>
+      </div>
+    </div>
+    <div class="card">
+      <a
+        href="http://www.veritas-a.com/news/articleView.html?idxno=457330"
+        target="_blank"
+      >
+        <img src="../static/image/card3.jpg" class="card-img" alt="newsImage" />
+      </a>
+      <div class="card-body">
+        <div class="card-title">K-MOOC 수어학습 강좌 개설</div>
+        <p class="card-text">
+          한국수어에 대한 활발한 연구를 진행 중인 최영주 교수는 "현재 한국
+          수어를 배울 수 있는 강좌가 부족한 상황"이라며 "이에 누구나 쉽게
+          한국수어를 단계적/체계적으로 배울 수 있는 오픈형 온라인 학습 과정을
+          제작하게 됐다"고 밝혔다.
+        </p>
+        <p class="card-comment">댓글 (48)</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End News-->
+
+<!-- Start Team -->
+<div class="team-container">
+  <div class="news-title">
+    <div>Sign Language Team</div>
+    <p>개발자정보</p>
+  </div>
+  <div class="cards">
+    <div class="member">
+      <img src="../static/image/member1.png" class="member-img" />
+      <div class="member-info">
+        <div>김지우</div>
+        <p>IoT인공지능융합전공</p>
+        <p>00wldn11@gmail.com</p>
+      </div>
+    </div>
+    <div class="member">
+      <img src="../static/image/member2.png" class="member-img" />
+      <div class="member-info">
+        <div>이세희</div>
+        <p>IoT인공지능융합전공</p>
+        <p>fluorescentbabys@gmail.com</p>
+      </div>
+    </div>
+    <div class="member">
+      <img src="../static/image/member3.png" class="member-img" />
+      <div class="member-info">
+        <div>전혜민</div>
+        <p>IoT인공지능융합전공</p>
+        <p>qqqwe10000@naver.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Team -->
+
+<!-- Carousel -->
+<script>
+  var prevButton = document.querySelector(".carousel-control.prev");
+  var nextButton = document.querySelector(".carousel-control.next");
+  var indicators = document.querySelectorAll(".indicator");
+  var items = document.querySelectorAll(".item");
+
+  var currentIndex = 0;
+  var itemCount = items.length;
+
+  function showItem(index) {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove("active", "inactive");
+      indicators[i].classList.remove("active");
+    }
+    items[index].classList.add("active");
+    indicators[index].classList.add("active");
+    currentIndex = index;
+  }
+
+  prevButton.addEventListener("click", function () {
+    var newIndex = (currentIndex - 1 + itemCount) % itemCount;
+    showItem(newIndex);
+  });
+
+  nextButton.addEventListener("click", function () {
+    var newIndex = (currentIndex + 1) % itemCount;
+    showItem(newIndex);
+  });
+
+  showItem(currentIndex);
+</script>
+{% endblock %}

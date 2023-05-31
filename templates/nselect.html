@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<link
+  href="{{ url_for('static', filename='css/select.css') }}"
+  rel="stylesheet"
+/>
+{% endblock %}
+
+{% block content %}
+<div class="select-container">
+  <div class="select-content">
+    <div class="select">STUDY</div>
+    <p class="select-text">
+      숫자를 선택하셨습니다. 아래 학습하기 또는 문제풀기 버튼을 눌러 학습을
+      진행해주세요.
+    </p>
+    <div class="select-wrap">
+      <button class="learn-btn" type="button">
+        <a class="learn-link" href="/number/learn">학습하기</a>
+      </button>
+      <span class="btn-space"></span>
+      <button class="quiz-btn" type="button">
+        <a class="quiz-link" href="/number/quiz">문제풀기</a>
+      </button>
+    </div>
+  </div>
+  <img class="select-img" src="../static/image/select3.jpg" />
+</div>
+{% endblock %}

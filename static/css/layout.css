@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+/* Footer */
+.footer-container {
+  background-color: #1d242d;
+  text-align: center;
+  padding: 5px;
+}
+.extreme-text {
+  color: #cfd6e1;
+}
+
+/* Top */
+.top-container {
+  background-color: #7fb77e;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.top-text {
+  color: #fffbf6;
+  line-height: 40px;
+  margin: 0 10px 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.top-text :hover {
+  cursor: pointer;
+}
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFBF6;
+}
+.logo {
+  text-decoration: none;
+  color: #59ab6e;
+  font-weight: bold;
+  font-size: 48px;
+  margin-left:20px;
+}
+.navlist {
+  list-style: none;
+}
+.nav-item {
+  float: left;
+  margin: 25px 0px 0 150px;
+}
+.nav-item > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+.nav-item :hover {
+  color: #FFC090;
+}
+#item4 {
+  margin-right: 150px;
+}

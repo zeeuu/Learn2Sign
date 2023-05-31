@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <link
+      href="{{ url_for('static', filename='css/layout.css') }}"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/#########.js" crossorigin="anonymous"></script>
+    {% endblock %}
+  </head>
+  <body>
+    <!-- Start Header -->
+    <!-- Start Top -->
+    <nav class="top-container">
+      <div class="top-text">
+        <i class="fa-solid fa-envelope" style="color:#fffbf6; margin:0 5px 0 20px;"></i>
+        <a href="/contact">
+          <p style="color:#fffbf6; text-decoration:none; display:inline-block; margin:0;">Contact us</p>
+        </a>
+      </div>
+      <div class="top-text">
+        <a href="https://github.com/zeeuu/Learn2Sign.git" target="_blank">
+          <i class="fa-brands fa-github-alt" style="color:#fffbf6;"></i>
+        </a>
+        <a href="https://invincible-rose-df0.notion.site/Sign-Language-8de4d641a54242b787e880f5eff485d3" target="_blank">
+          <i class="fa-solid fa-comment-dots" style="color:#fffbf6; margin:0 60px 0 10px;"></i>
+        </a>
+      </div>
+      
+    </nav>
+    <!-- Close Top -->
+    <!-- Start Nav -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <p class="logoname">
+        <a class="logo" href="/main">Learn2Sign</a>
+      </p>
+      <!-- Tap -->
+      <div class="navtap">
+        <ul class="navlist">
+          <li class="nav-item">
+            <a class="nav-link" href="/consonant">자음</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/vowel">모음</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/number">숫자</a>
+          </li>
+          <li class="nav-item" id="item4">
+            <a class="nav-link" href="/contact">제안</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Close Header -->
+    {% block content %}{% endblock %}
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-container">
+        <p class="extreme-text">전남대학교 인공지능 캡스톤 디자인 프로젝트</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

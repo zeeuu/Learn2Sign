@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<link
+  href="{{ url_for('static', filename='css/quiz.css') }}"
+  rel="stylesheet"
+/>
+{% endblock %}
+
+{% block content %}
+<div style="background-color: #7fb77e; padding: 35px">
+  <div class="quiz-content">
+    <div class="quiz-notice">
+      <div class="quiz">문제풀기</div>
+      <div class="subject-notice">
+        이전에 학습한 내용을 바탕으로 지문자 중 자음에 해당하는 문제를 풀어보겠습니다.
+        <br />
+        왼쪽에 제시된 문제에 알맞는 동작을 오른쪽 카메라에 수행해봅시다.
+      </div>
+    </div>
+    <div class="media-content">
+      <img
+        id="imageElement"
+        src=""
+        alt=""
+        style="width: 350px; height: 350px; display: inline-block"
+      />
+      <div>
+        <video autoplay="true" id="videoElement"></video>
+      </div>
+      <canvas id="canvas" style="display: none"></canvas>
+    </div>
+  </div>
+</div>
+<!-- 정답 모달 -->
+<div id="correctModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-text">
+      <b>정답입니다!<b><br />다음 문제로 넘어가겠습니다.
+    </div>
+    <button id="correctButton" class="modal-button">확인</button>
+  </div>
+</div>
+<!-- 오답 모달 -->
+<div id="wrongModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-text">
+      오답입니다!<br />문제를 다시 풀어보세요.
+    </div>
+    <button id="wrongButton" class="modal-button">확인</button>
+  </div>
+</div>
+<script>
+  const images = {{ images|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/cquiz.js') }}"></script>
+{% endblock %}

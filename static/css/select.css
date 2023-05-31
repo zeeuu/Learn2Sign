@@ -1,0 +1,70 @@
+.select-container {
+    background-color: #7FB77E;
+    height: 750px;
+}
+.select-content {
+    display: inline-block;
+    margin-left: 100px;
+}
+.select {
+    color: #fff;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 200px;
+}
+.select-text {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 172px;
+}
+.learn-btn{
+    text-align:center;
+    background: #ffc090;
+    border: 3px solid #ffc090;
+    border-radius: 10px;
+    padding: 7px 40px;
+}
+.learn-link {
+    text-decoration: none;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+.learn-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 3px solid #fff;
+    .learn-link {
+        color: #ffc090;
+    }
+}
+.quiz-btn{
+    text-align:center;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 7px 40px;
+}
+.quiz-link {
+    text-decoration: none;
+    font-size: 28px;
+    color: #ffc090;
+    font-weight: bold;
+}
+.quiz-btn:hover {
+    cursor: pointer;
+    background-color: #ffc090;
+    border: 3px solid #ffc090;
+    .quiz-link {
+        color: #fff;
+    }
+}
+.btn-space {
+    display: inline-block;
+    width: 50px;
+}
+.select-img {
+    height: 550px;
+    float: right;
+    margin: 100px 100px 0 0;
+}

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+/* Carousel */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    1% {
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      display: block;
+    }
+    99% {
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .carousel {
+    background: #e5f0e5;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-item {
+    display: flex;
+  }
+  .item {
+    padding: 50px;
+    height: 500px;
+    flex: 0 0 auto;
+    display: none;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .item.active {
+    display: block;
+    animation-name: fadeIn;
+  }
+  .inactive {
+    animation-name: fadeOut;
+  }
+  .item-img {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-left: 35px;
+    margin-right: 30px;
+  }
+  .item-content {
+    margin-left: 30px;
+    display: inline-block;
+    width: 750px;
+  }
+  .item-title {
+    margin: 150px 0 0 0;
+    color: #59ab6e;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .item-sub {
+    margin: 15px 0 30px 0;
+    font-size: 30px;
+  }
+  .item-text {
+    margin: 0;
+    font-size: 16px;
+  }
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    color: #ACD5B6;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .carousel-control.prev {
+    left: 10px;
+    margin-left: 10px;
+  }
+  .carousel-control.next {
+    right: 10px;
+    margin-right: 10px;
+  }
+  .carousel-control:hover {
+    color: #59ab6e;
+  }
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .carousel-indicators .indicator {
+    width: 30px;
+    height: 4px;
+    background-color: #ACD5B6;
+    margin: 0 4px 10px 4px;
+  }
+  .carousel-indicators .indicator.active {
+    background-color: #59ab6e;
+  }
+  
+  
+  /* News */
+  .news-container {
+    background-color: #e9eef5;
+  }
+  .news-title {
+    text-align: center;
+  }
+  .news-title > div {
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: bold;
+  }
+  .news-title > p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .cards {
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  .card {
+    width: 400px;
+    display: inline-block;
+    margin: 0 15px 0 15px;
+    background-color: #fff;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+  }
+  .card-img {
+    width: 380px;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+  }
+  .card-body {
+    padding: 0 20px 0 20px;
+  }
+  .card-title {
+    font-size: 23px;
+    margin-top: 20px;
+  }
+  .card-text {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .card-comment {
+    font-size: 14px;
+    text-align: right;
+    color:lightslategrey;
+  }
+  
+  /* Team */
+  .team-container {
+    background-color: #FFFBF6;
+  }
+  .member{
+    display: inline-block;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+  .member-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    border: 1px solid #000;
+  }
+  .member-info {
+    text-align: center;
+  }
+  .member-info > div {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+  }
+  .member-info > p {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  
+  

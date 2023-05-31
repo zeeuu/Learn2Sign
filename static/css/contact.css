@@ -1,0 +1,94 @@
+.map-container {
+    background-color: #e9eef5;
+}
+.map-text {
+    text-align: center;
+    padding-top: 35px;
+}
+.map-text>div {
+    font-size: 32px;
+    font-weight: bold;
+}
+.map {
+    text-align: center;
+    margin-bottom: 0;
+}
+.map>iframe {
+    width: 90%;
+    height: 400px;
+    border:none;
+    margin: 10px 0 35px 0;
+}
+.mail-container {
+    background-color: #FFFBF6;
+    text-align: center;
+}
+.gform {
+    display: inline-block;
+    text-align: left;
+    width: 74%;
+}
+.gform > fieldset {
+    border: none;
+}
+.mail-info {
+    display: flex;
+    justify-content:space-between;
+    margin: 50px 0 25px 0;
+}
+.mail-info > div {
+    width: 46%;
+}
+.mail-info > div > label {
+    font-weight: bold;
+    display: block;
+}
+.mail-text {
+    margin: 10px 0 25px 0;
+}
+.mail-text > label {
+    font-weight: bold;
+    display: block;
+}
+.blank {
+    width: 4%;
+}
+#name {
+    width: 100%;
+    height: 24px;
+    margin-top: 5px;
+}
+#email {
+    width: 100%;
+    height: 24px;
+    margin-top: 5px;
+}
+#subject {
+    width: 100%;
+    height: 24px;
+    margin-top: 5px;
+}
+#message {
+    width: 100%;
+    margin-top: 5px;   
+}
+.mailbtn {
+    float: right;
+    background-color: #59ab6e;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 7px 13px 7px 13px;
+    margin: 15px 0 15px 0;
+}
+.mailbtn:hover {
+    cursor: pointer;
+}
+.thankyou_message {
+    margin:0 0 50px 0;
+    text-align:center;
+    color: #59ab6e;
+    font-size: 35px;
+    font-weight: bold;
+}
